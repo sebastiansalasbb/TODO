@@ -4,7 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <!--********************* Titulo**************************************************** -->
+    <header>
+      <div class="container-title">
+        <h1>Lista de Tareas</h1>
+      </div>
+    </header>
+    <!--********************* Titulo**************************************************** -->
+
+    <!--********************* Div Tareas**************************************************** -->
+    <main>
+      <div class="container-box-tareas">
+        <div class="input-tarea">
+          <form action="" class="form-tarea">
+            <input type="text" class="ingreso-tarea" />
+          </form>
+        </div>
+        <!--- Padre de tareas pendientes y botones---------------------------->
+        <div class="opciones-tarea">
+          <!--Control de Tareas Pendientes-->
+          <div class="control-pendientes">
+            <p class="contador-pendientes"><span>0</span> Pendientes</p>
+          </div>
+          <!--Control de Tareas Pendientes-->
+          <!--TODO Div para botones-->
+          <div class="botones-opciones">
+            <button>Todos</button>
+            <button>Pendientes</button>
+            <button>OK</button>
+            <button>Borrar OK</button>
+          </div>
+          <!--TODO Div para botones-->
+        </div>
+        <!--- Padre de tareas pendientes y botones---------------------------->
+      </div>
+    </main>
+    <!--********************* Div Tareas**************************************************** -->
+
+    <script src="./index.js"></script>
+    <script src="./classes/todo.class.js"></script>
+  </body>
 </html>
